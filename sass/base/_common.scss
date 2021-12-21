@@ -1,0 +1,32 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  @include font(500, 14px, 1.14, 0.02em);
+
+  color: var(--second-link-color);
+  cursor: pointer;
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
+
+  .mamber-social-link:hover &,
+  .mamber-social-link:focus & {
+    fill: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--link-accent);
+  }
+}

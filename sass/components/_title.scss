@@ -1,0 +1,27 @@
+.team__title-team {
+  margin-bottom: 50px;
+  margin-top: 0;
+
+  @include font(700, 36px, 1.16, 0.03em);
+
+  text-align: center;
+  color: var(--second-title-color);
+}
+
+.work__hero-title-work {
+  margin-bottom: 0;
+  margin-top: 0;
+
+  @include font();
+  color: var(--second-title-color);
+}
+
+.clients__title-clients {
+  margin-bottom: 50px;
+  margin-top: 0;
+
+  @include font(700, 36px, 1.16, 0.03em);
+  text-align: center;
+
+  color: var(--second-title-color);
+}

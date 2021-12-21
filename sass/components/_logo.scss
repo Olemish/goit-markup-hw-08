@@ -1,0 +1,22 @@
+.logo {
+  font-family: Raleway;
+  text-decoration: none;
+  margin-right: 93px;
+  margin-left: 0;
+  @include font(700, 26px, 1.19, 0.03em);
+
+  color: var(--logo-color);
+}
+.logo-footer {
+  display: inline-flex;
+  color: var(--logo-color-footer);
+  margin: 0;
+  margin-bottom: 20px;
+}
+.logo-span {
+  font-family: Raleway;
+  text-decoration: none;
+  @include font(700, 26px, 1.19, 0.03em);
+
+  color: var(--logo-span-color);
+}

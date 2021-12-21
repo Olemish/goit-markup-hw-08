@@ -1,0 +1,85 @@
+.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  left: 0;
+  bottom: -1px;
+}
+
+.link-contacts {
+  display: inline-flex;
+
+  align-items: center;
+  margin-left: auto;
+  @include font(500, 14px, 1.14, 0.02em);
+
+  color: var(--second-link-color);
+
+  & .contacts-link + .contacts-link {
+    margin-left: 50px;
+  }
+}
+
+.contacts-link {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.icon {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.icon-link-mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+  transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--link-accent);
+  }
+}
+
+.link-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.icon-link-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+  transition: fill 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}

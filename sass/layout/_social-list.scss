@@ -1,0 +1,31 @@
+.conteiner-footer-social-links {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.social-list-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-team__social-team-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+.list-team__social-team-item {
+  @extend %social-item;
+}
+
+.list-team__mamber-social-link {
+  @extend %social-link;
+}
+
+.list-team__mamber-social-icon {
+  display: flex;
+  fill: var(--link-color-second);
+  transition: fill 250ms var(--timing-function);
+}

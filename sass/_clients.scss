@@ -1,0 +1,46 @@
+.clients {
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list-clients {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.list-clients__card-client {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.list-clients__item-client {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: fill 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.list-clients__logo-client {
+  fill: #afb1b8;
+  .item-client:hover &,
+  .item-client:focus & {
+    fill: var(--accent-color);
+  }
+}
