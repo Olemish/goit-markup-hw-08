@@ -1,24 +1,80 @@
 .hero-main {
-  // max-width: 1600px;
-  // height: 600px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid black;
+  background-repeat: no-repeat;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../../images/hero/Header\ mob\ min.jpg');
-  background-repeat: no-repeat;
+    url('../../images/hero/Header\ img\ \(4\)-min.jpg');
+
   background-size: cover;
   background-position: center;
   background-color: rgba(47, 48, 58, 0.4);
 
   text-align: center;
   justify-content: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../../images/hero/Header\ img\ mob\ 2x\ \(1\)-min.jpg');
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../../images/hero/Header\ img\ tab\ \(1\)-min.jpg');
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../../images/hero/Header\ img\ tab\ 2x\ \(1\)-min.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../../images/hero/Img\ \(2\)-min.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../../images/hero/header\ Img\ desctop\ 2x-min.jpg');
+    }
+  }
 }
 
 .hero-main__main-title {
@@ -29,6 +85,14 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--main-title-color);
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    @include font(900, 26px, 1.62, 0.06em);
+  }
+  @media screen and (min-width: 1140px) {
+    width: 1140px;
+    @include font(900, 44px, 1.36, 0.06em);
+  }
 }
 
 .hero-main__hero-btn {

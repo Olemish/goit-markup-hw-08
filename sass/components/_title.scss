@@ -1,8 +1,8 @@
 .team__title-team {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 0;
 
-  @include font(700, 36px, 1.16, 0.03em);
+  @include font(500, 28px, 1.17, 0.03em);
 
   text-align: center;
   color: var(--second-title-color);
@@ -12,7 +12,7 @@
   margin-bottom: 0;
   margin-top: 0;
 
-  @include font();
+  @include font(700, 36px, 1.16, 0.03em);
   color: var(--second-title-color);
 }
 
@@ -20,7 +20,7 @@
   margin-bottom: 50px;
   margin-top: 0;
 
-  @include font(700, 36px, 1.16, 0.03em);
+  @include font(500, 28px, 1.17, 0.03em);
   text-align: center;
 
   color: var(--second-title-color);

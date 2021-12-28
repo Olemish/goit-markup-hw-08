@@ -1,5 +1,5 @@
 .current::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 100%;
@@ -11,16 +11,22 @@
 }
 
 .link-contacts {
-  display: inline-flex;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
 
-  align-items: center;
-  margin-left: auto;
-  @include font(500, 14px, 1.14, 0.02em);
+    align-items: center;
 
-  color: var(--second-link-color);
+    @include font(500, 14px, 1.14, 0.02em);
 
-  & .contacts-link + .contacts-link {
-    margin-left: 50px;
+    color: var(--second-link-color);
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    & .contacts-link + .contacts-link {
+      margin-left: 50px;
+    }
   }
 }
 
@@ -32,7 +38,7 @@
 
 .icon {
   display: flex;
-  margin-right: 10px;
+  margin: 0;
   align-items: center;
   justify-content: center;
 }
@@ -50,7 +56,11 @@
 }
 
 .icon-link-mail {
+  width: 14px;
+  height: 10px;
   display: flex;
+  margin-right: 8px;
+
   align-items: center;
   justify-content: center;
   fill: currentColor;
@@ -58,6 +68,10 @@
   &:hover,
   &:focus {
     color: var(--link-accent);
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-right: 10px;
   }
 }
 
@@ -74,6 +88,9 @@
 
 .icon-link-phone {
   display: flex;
+  width: 10px;
+  height: 14px;
+  margin-right: 8px;
   align-items: center;
   justify-content: center;
   fill: currentColor;
@@ -81,5 +98,9 @@
   &:hover,
   &:focus {
     fill: var(--accent-color);
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-right: 10px;
   }
 }

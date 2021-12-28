@@ -30,3 +30,19 @@ body {
     color: var(--link-accent);
   }
 }
+
+button {
+  display: block;
+  cursor: pointer;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
