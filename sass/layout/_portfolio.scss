@@ -98,26 +98,34 @@
   }
 }
 
-.cards-portfolio > .card-portfolio-footer {
+.card-portfolio-footer {
   flex-grow: 1;
   margin-top: 0;
   padding: 20px 24px;
+
+  &:first-child {
+    padding: 20px 24px 56px 24px;
+  }
+
   border: 1px solid var(--border-color-head);
   border-top: transparent;
   box-sizing: border-box;
   @media screen and (min-width: 1200px) {
     flex-grow: 1;
+    padding: 20px 24px;
   }
 }
 
 .card-portfolio-footer__title-work {
-  @include font(700, 18px, 2, 0.01em);
+  @include font(700, 18px, 2, 0.06em);
+  font-weight: bold;
 }
 
 .name-work {
   margin-top: 0;
   margin-bottom: 0;
-  @include font(400, 16px, 1.87, 0.03em);
+  @include font(400, 16px, 1.875, 0.03em);
+  font-weight: normal;
 
   color: var(--main-text-color);
 }

@@ -13,8 +13,10 @@
 .logo-footer {
   color: var(--logo-color-footer);
   margin: 0;
-
-  //  display: inline-flex;
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    margin-bottom: 20px;
+  }
 }
 .logo-span {
   font-family: Raleway;
