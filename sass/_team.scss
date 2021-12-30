@@ -50,8 +50,11 @@
   flex-grow: 1;
   margin: 0;
   padding-top: 30px;
-  padding-bottom: 30px;
-  // border: 1px solid transparent;
+  padding-bottom: 24px;
+  border: 1px solid transparent;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 
 .team__name-mamber {
@@ -59,15 +62,17 @@
 
   padding-bottom: 10px;
   padding-left: auto;
-  @include font(700, 16px, 1.18, 0.03em);
   text-align: center;
 
   color: var(--second-title-color);
+  @include font(500, 16px, 1.187, 0.03em);
+  font-style: normal;
 }
 
 .team__position-mamber {
   margin: 0;
-  @include font(500, 16px, 1.18, 0.03em);
+  @include font(400, 16px, 1.187, 0.03em);
+  font-weight: normal;
   text-align: center;
 
   color: var(--main-text-color);

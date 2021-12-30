@@ -413,13 +413,22 @@ p {
 .team__title-team {
   margin-bottom: 30px;
   margin-top: 0;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  font-weight: bold;
   text-align: center;
   color: var(--second-title-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.178;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 
 .work__hero-title-work {
@@ -437,12 +446,21 @@ p {
   margin-bottom: 50px;
   margin-top: 0;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.178;
   letter-spacing: 0.03em;
   font-weight: bold;
   text-align: center;
   color: var(--second-title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title-clients {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 
 .list-btn {
@@ -523,6 +541,7 @@ p {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
   padding-left: 29px;
   border-color: var(--accent-color);
   background-color: var(--accent-color);
@@ -598,8 +617,8 @@ p {
 .header-link {
   display: flex;
   position: relative;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -823,7 +842,7 @@ p {
 }
 
 .footer-link {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -946,7 +965,7 @@ p {
   margin-right: auto;
   outline: 1px solid black;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/Header img (4)-min.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header-mob-min.jpg");
   background-size: cover;
   background-position: center;
   background-color: rgba(47, 48, 58, 0.4);
@@ -958,14 +977,14 @@ p {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-main {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header img mob 2x (1)-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header-mob-2x-min.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-main {
     width: 768px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header img tab (1)-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header-tab-min.jpg");
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -973,7 +992,7 @@ p {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-main {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header img tab 2x (1)-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header-tab-2x-min.jpg");
   }
 }
 
@@ -981,13 +1000,13 @@ p {
   .hero-main {
     width: 1600px;
     height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Img (2)-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/header-desctop-min.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-main {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/header Img desctop 2x-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/header-desctop-2x-min.jpg");
   }
 }
 
@@ -1241,27 +1260,36 @@ p {
   flex-grow: 1;
   margin: 0;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+  border: 1px solid transparent;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__footer-card {
+    padding-bottom: 30px;
+  }
 }
 
 .team__name-mamber {
   margin: 0;
   padding-bottom: 10px;
   padding-left: auto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
   text-align: center;
   color: var(--second-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  font-style: normal;
 }
 
 .team__position-mamber {
   margin: 0;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.187;
   letter-spacing: 0.03em;
+  font-weight: normal;
   text-align: center;
   color: var(--main-text-color);
 }
@@ -1325,6 +1353,7 @@ p {
   height: 100%;
   align-items: center;
   justify-content: center;
+  padding: 16px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: fill 250ms var(--timing-function);
@@ -1364,6 +1393,7 @@ p {
   .link-contacts {
     display: block;
     margin-left: auto;
+    padding: 21px;
     align-items: center;
     font-weight: 500;
     font-size: 14px;
@@ -1376,6 +1406,9 @@ p {
 @media screen and (min-width: 1200px) {
   .link-contacts {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
   }
   .link-contacts .contacts-link + .contacts-link {
     margin-left: 50px;
@@ -1384,8 +1417,16 @@ p {
 
 .contacts-link {
   display: flex;
+}
+
+.contacts-link + .contacts-link {
   padding-top: 10px;
-  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-link + .contacts-link {
+    padding-top: 0;
+  }
 }
 
 .icon {
@@ -1551,8 +1592,8 @@ p {
 .header-link {
   display: flex;
   position: relative;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -1694,7 +1735,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .conteiner-hero-portfolio {
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
@@ -1745,6 +1786,7 @@ p {
 }
 
 .link-cards-portfolio {
+  display: block;
   margin-bottom: 30px;
   cursor: pointer;
   transition: box-shadow 250ms var(--timing-function);
@@ -1754,11 +1796,13 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.link-cards-portfolio:hover > .title-work {
+  color: var(--main-text-color);
+}
+
 @media screen and (min-width: 768px) {
   .link-cards-portfolio {
-    display: flex;
     flex-basis: calc((100% - 30px) / 2);
-    margin-bottom: 30px;
   }
   .link-cards-portfolio:nth-child(2n) {
     margin-left: 30px;
@@ -1767,9 +1811,6 @@ p {
 
 @media screen and (min-width: 1200px) {
   .link-cards-portfolio {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
     flex-basis: calc((100% - 60px) / 3);
     margin-bottom: 30px;
     margin-left: 30px;
@@ -1804,23 +1845,27 @@ p {
   opacity: 1;
 }
 
+@media screen and (min-width: 768px) {
+  .cards-portfolio {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
 .card-portfolio-footer {
-  flex-grow: 1;
   margin-top: 0;
   padding: 20px 24px;
   border: 1px solid var(--border-color-head);
-  border-top: transparent;
-  box-sizing: border-box;
+  border-top: none;
 }
 
-.card-portfolio-footer:first-child {
-  padding: 20px 24px 56px 24px;
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .card-portfolio-footer {
     flex-grow: 1;
-    padding: 20px 24px;
+  }
+  .card-portfolio-footer:first-child {
+    padding-bottom: 56px;
   }
 }
 
@@ -1829,6 +1874,7 @@ p {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--second-title-color);
   font-weight: bold;
 }
 
@@ -1932,7 +1978,7 @@ p {
 }
 
 .footer-link {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
