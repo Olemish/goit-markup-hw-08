@@ -481,7 +481,7 @@ p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 }
 
@@ -795,20 +795,22 @@ p {
 }
 
 .address {
-  text-align: center;
-  padding-bottom: 9px;
-  margin-top: 20px;
+  text-align: left;
+}
+
+.conteiner-footer__link-address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
+  margin-bottom: 8px;
   color: var(--footer-text-color);
 }
 
 @media screen and (min-width: 1200px) {
-  .address {
-    margin-top: 0;
+  .conteiner-footer__link-address {
+    margin-bottom: 9px;
   }
 }
 
@@ -834,27 +836,41 @@ p {
   .conteiner-footer__title-social-links {
     margin-top: 0;
     text-transform: uppercase;
+    text-align: left;
   }
 }
 
 .conteiner-footer__list-link-footer {
   display: block;
+  text-align: center;
 }
 
-.footer-link {
-  margin-bottom: 8px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--footer-second-link-color);
-  background-color: #2f303a;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-link {
-    margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .conteiner-footer__list-link-footer {
+    text-align: left;
   }
+}
+
+.footer-link:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-link:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-link__mail {
+  color: var(--footer-second-link-color);
+  font-style: normal;
+  font-weight: normal;
+}
+
+.footer-link__phone {
+  color: var(--footer-second-link-color);
+  font-style: normal;
+  font-weight: normal;
 }
 
 .footer-social-link {
@@ -965,7 +981,7 @@ p {
   margin-right: auto;
   outline: 1px solid black;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header-mob-min.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header-mob-min.jpg);
   background-size: cover;
   background-position: center;
   background-color: rgba(47, 48, 58, 0.4);
@@ -977,14 +993,14 @@ p {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-main {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header-mob-2x-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header-mob-2x-min.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-main {
-    width: 768px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header-tab-min.jpg");
+    max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header-tab-min.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -992,21 +1008,23 @@ p {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-main {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Header-tab-2x-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header-tab-2x-min.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-main {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/header-desctop-min.jpg");
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header-desctop-min.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-main {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/header-desctop-2x-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/header-desctop-2x-min.jpg);
   }
 }
 
@@ -1526,13 +1544,8 @@ p {
 .logo-footer {
   color: var(--logo-color-footer);
   margin: 0;
-}
-
-@media screen and (min-width: 1200px) {
-  .logo-footer {
-    display: inline-flex;
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
+  display: inline-flex;
 }
 
 .logo-span {
@@ -1931,20 +1944,22 @@ p {
 }
 
 .address {
-  text-align: center;
-  padding-bottom: 9px;
-  margin-top: 20px;
+  text-align: left;
+}
+
+.conteiner-footer__link-address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
+  margin-bottom: 8px;
   color: var(--footer-text-color);
 }
 
 @media screen and (min-width: 1200px) {
-  .address {
-    margin-top: 0;
+  .conteiner-footer__link-address {
+    margin-bottom: 9px;
   }
 }
 
@@ -1970,27 +1985,41 @@ p {
   .conteiner-footer__title-social-links {
     margin-top: 0;
     text-transform: uppercase;
+    text-align: left;
   }
 }
 
 .conteiner-footer__list-link-footer {
   display: block;
+  text-align: center;
 }
 
-.footer-link {
-  margin-bottom: 8px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--footer-second-link-color);
-  background-color: #2f303a;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-link {
-    margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .conteiner-footer__list-link-footer {
+    text-align: left;
   }
+}
+
+.footer-link:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-link:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-link__mail {
+  color: var(--footer-second-link-color);
+  font-style: normal;
+  font-weight: normal;
+}
+
+.footer-link__phone {
+  color: var(--footer-second-link-color);
+  font-style: normal;
+  font-weight: normal;
 }
 
 .footer-social-link {
